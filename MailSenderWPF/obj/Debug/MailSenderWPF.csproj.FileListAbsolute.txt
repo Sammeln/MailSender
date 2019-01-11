@@ -1,0 +1,17 @@
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MailSenderWPF.exe.config
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MailSenderWPF.exe
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MailSenderWPF.pdb
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csprojAssemblyReference.cache
+F:\Git\MailSender\MailSenderWPF\obj\Debug\Theme.baml
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderMainWindow.g.cs
+F:\Git\MailSender\MailSenderWPF\obj\Debug\App.g.cs
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF_MarkupCompile.cache
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF_MarkupCompile.lref
+F:\Git\MailSender\MailSenderWPF\obj\Debug\App.baml
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderMainWindow.baml
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.g.resources
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.Properties.Resources.resources
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csproj.GenerateResource.cache
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csproj.CoreCompileInputs.cache
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.exe
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.pdb

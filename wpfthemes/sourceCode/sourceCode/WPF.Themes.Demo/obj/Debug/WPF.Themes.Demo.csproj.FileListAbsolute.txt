@@ -1,0 +1,17 @@
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\bin\Debug\WPF.Themes.Demo.exe.config
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\bin\Debug\WPF.Themes.Demo.exe
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\bin\Debug\WPF.Themes.Demo.pdb
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\bin\Debug\WPF.Themes.dll
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\bin\Debug\WPF.Themes.pdb
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.csprojAssemblyReference.cache
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\Window1.baml
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\Window1.g.cs
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\App.g.cs
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo_MarkupCompile.cache
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.g.resources
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.Properties.Resources.resources
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.csproj.GenerateResource.cache
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.csproj.CoreCompileInputs.cache
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.csproj.CopyComplete
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.exe
+F:\Git\MailSender\wpfthemes\sourceCode\sourceCode\WPF.Themes.Demo\obj\Debug\WPF.Themes.Demo.pdb
