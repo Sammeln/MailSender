@@ -1,0 +1,5 @@
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailServiceLib\bin\Debug\MailServiceLib.dll
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailServiceLib\bin\Debug\MailServiceLib.pdb
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailServiceLib\obj\Debug\MailServiceLib.csproj.CoreCompileInputs.cache
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailServiceLib\obj\Debug\MailServiceLib.dll
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailServiceLib\obj\Debug\MailServiceLib.pdb

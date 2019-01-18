@@ -1,0 +1,12 @@
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\bin\Debug\MailSenderControls.dll
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\bin\Debug\MailSenderControls.pdb
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\TabControlSwitcher.g.cs
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls_MarkupCompile.cache
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls_MarkupCompile.lref
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\TabControlSwitcher.baml
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.g.resources
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.Properties.Resources.resources
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.csproj.GenerateResource.cache
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.csproj.CoreCompileInputs.cache
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.dll
+C:\Users\shmac\Documents\!GB\C#3-1\L2\src\MailSender\MailSenderControls\obj\Debug\MailSenderControls.pdb

@@ -15,7 +15,7 @@
                     />
             </TabItem>
             <TabItem 
-                Header="TabItem">
+                Header="TabItem" HorizontalAlignment="Right" Width="58">
                 <Grid
                     Background="#FFE5E5E5"
                     />

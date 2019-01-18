@@ -62,6 +62,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Entity\Implementation\MailMessageEntity.cs" />
+    <Compile Include="Entity\Implementation\RecipientEntity.cs" />
+    <Compile Include="Entity\Implementation\SenderEntity.cs" />
+    <Compile Include="Entity\Implementation\SMTP.cs" />
+    <Compile Include="Entity\Interface\IBaseEntity.cs" />
+    <Compile Include="Entity\Interface\IEmailAddress.cs" />
+    <Compile Include="Entity\Interface\INamedEntity.cs" />
+    <Compile Include="Entity\Interface\ISenderEntity.cs" />
     <Compile Include="MailSenderMainWindow.xaml.cs">
       <DependentUpon>MailSenderMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -96,6 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\Implementation\" />
+    <Folder Include="Service\Interface\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
