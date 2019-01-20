@@ -34,8 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.2.1.2\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>packages\MimeKit.2.1.2\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Service\MailSendService.cs" />
     <Page Include="MailSenderMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,10 +73,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Entity\Implementation\MailMessageEntity.cs" />
-    <Compile Include="Entity\Implementation\RecipientEntity.cs" />
-    <Compile Include="Entity\Implementation\SenderEntity.cs" />
-    <Compile Include="Entity\Implementation\SMTP.cs" />
+    <Compile Include="Entity\Implementation\MailMessageModel.cs" />
+    <Compile Include="Entity\Implementation\RecipientModel.cs" />
+    <Compile Include="Entity\Implementation\SenderModel.cs" />
+    <Compile Include="Entity\Implementation\SMTPModel.cs" />
     <Compile Include="Entity\Interface\IBaseEntity.cs" />
     <Compile Include="Entity\Interface\IEmailAddress.cs" />
     <Compile Include="Entity\Interface\INamedEntity.cs" />
@@ -97,6 +108,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,8 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Service\Implementation\" />
-    <Folder Include="Service\Interface\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
