@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MailSenderWPF.Entity.Implementation
 {
-    class SenderEntity : ISenderEntity
+    public class SenderModel : ISenderEntity
     {
         public string Password { get; set; }
         public int Id { get; set; }

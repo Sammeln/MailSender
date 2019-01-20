@@ -1,27 +1,25 @@
-﻿using System;
+﻿using MailSenderWPF.Entity.Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using MailSenderWPF.Entity.Interface;
 
 namespace MailSenderWPF.Entity.Implementation
 {
-    public class SMTP : INamedEntity, IBaseEntity, INotifyPropertyChanged
+    public class MailMessageModel : IBaseEntity, INotifyPropertyChanged
     {
-        #region private members
-
+        #region Private members
         private int id;
-        private string name;
-        private string domain;
-        private int port;
-
+        private string from;
+        private string to;
+        private string subject;
+        private string body;
         #endregion
 
-        #region public props
-
+        #region Public props
         public int Id
         {
             get => id;
@@ -31,33 +29,42 @@ namespace MailSenderWPF.Entity.Implementation
                 OnPropertyChanged(nameof(Id));
             }
         }
-        public string Name
+        public string From
         {
-            get => name;
+            get => from;
             set
             {
-                name = value;
-                OnPropertyChanged(nameof(Name));
+                from = value;
+                OnPropertyChanged(nameof(From));
             }
         }
-        public string Domain
+        public string To
         {
-            get => domain;
+            get => to;
             set
             {
-                domain = value;
-                OnPropertyChanged(nameof(Domain));
+                to = value;
+                OnPropertyChanged(nameof(To));
             }
         }
-        public int Port
+        public string Subject
         {
-            get => port;
+            get => subject;
             set
             {
-                port = value;
-                OnPropertyChanged(nameof(Port));
+                subject = value;
+                OnPropertyChanged(nameof(Subject));
             }
         }
+        public string Body
+        {
+            get => body;
+            set
+            {
+                body = value;
+                OnPropertyChanged(nameof(Body));
+            }
+        } 
 
         #endregion
 
@@ -66,5 +73,6 @@ namespace MailSenderWPF.Entity.Implementation
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
+
     }
 }

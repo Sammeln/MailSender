@@ -1,24 +1,26 @@
-﻿using MailSenderWPF.Entity.Interface;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using MailSenderWPF.Entity.Interface;
 
 namespace MailSenderWPF.Entity.Implementation
 {
-    public class RecipientEntity : IBaseEntity, INamedEntity, IEmailAddress, INotifyPropertyChanged
+    public class SMTPModel : INamedEntity, IBaseEntity, INotifyPropertyChanged
     {
-        #region Private members
+        #region private members
 
         private int id;
         private string name;
-        private string email;
+        private string domain;
+        private int port;
 
         #endregion
-        #region Public props
+
+        #region public props
 
         public int Id
         {
@@ -38,7 +40,25 @@ namespace MailSenderWPF.Entity.Implementation
                 OnPropertyChanged(nameof(Name));
             }
         }
-        public string EMail { get; set; } 
+        public string Domain
+        {
+            get => domain;
+            set
+            {
+                domain = value;
+                OnPropertyChanged(nameof(Domain));
+            }
+        }
+        public int Port
+        {
+            get => port;
+            set
+            {
+                port = value;
+                OnPropertyChanged(nameof(Port));
+            }
+        }
+
         #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;
