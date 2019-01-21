@@ -9,10 +9,34 @@ namespace MailSenderWPF.ViewModel
 {
     public class SenderViewModel : ViewModelBase
     {
-        #region private members
+        #region private fields
 
         private SenderModel selectedSender;
         IData context;
+        private RelayCommand addCommand;
+
+        #endregion
+
+        #region Commands
+
+        public RelayCommand AddCommand
+        {
+            get
+            {
+                return addCommand ?? (addCommand = new RelayCommand(obj =>
+                {
+                    SenderModel sender = new SenderModel
+                    {
+                        Id = SendersList.Count + 1,
+                        Name = "_",
+                        EMail = "_",
+                        Password = "_",
+                        SMTP = new SMTPModel()
+                    };
+                    context.Senders.Add(sender);
+                }));
+            }
+        }
 
         #endregion
 

@@ -57,7 +57,10 @@ namespace MailSenderWPF.Entity.Implementation
             }
         }
 
-
+        public SenderModel()
+        {
+                
+        }
 
     }
 }

@@ -132,7 +132,8 @@
                                 <Button
                                     Grid.Column="0"
                                     Grid.Row="1"
-                                    Content="Add"/>
+                                    Content="Add"
+                                    Command="{Binding AddCommand}"/>
 
 
                             </Grid>

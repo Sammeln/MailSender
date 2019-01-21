@@ -14,5 +14,7 @@ namespace MailSenderWPF.Data
          ObservableCollection<RecipientModel> Recipients { get; set; }
          ObservableCollection<MailMessageModel> Messages { get; set; }
          ObservableCollection<SMTPModel> SMTPList { get; set; }
+
+        void AddSender(SenderModel sender);
     }
 }

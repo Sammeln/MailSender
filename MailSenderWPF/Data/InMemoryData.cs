@@ -3,11 +3,16 @@ using MailSenderWPF.Entity.Implementation;
 
 namespace MailSenderWPF.Data
 {
-    public class InMemoryData : Service.ViewModelBase,IData
+    public class InMemoryData : Service.ViewModelBase, IData
     {
+        #region fields
+
         private static InMemoryData instance;
         private ObservableCollection<SenderModel> senders;
 
+        #endregion
+
+        #region props
         public ObservableCollection<SenderModel> Senders
         {
             get => senders;
@@ -20,6 +25,10 @@ namespace MailSenderWPF.Data
         public ObservableCollection<RecipientModel> Recipients { get; set; }
         public ObservableCollection<MailMessageModel> Messages { get; set; }
         public ObservableCollection<SMTPModel> SMTPList { get; set; }
+        #endregion
+
+        #region CTOR
+
         public InMemoryData()
         {
             Senders = new ObservableCollection<SenderModel>
@@ -54,9 +63,28 @@ namespace MailSenderWPF.Data
                 }
             };
         }
+
+        #endregion
+
+        #region Singleton
+
         public static InMemoryData GetInstance()
         {
             return instance ?? new InMemoryData();
         }
+
+        #endregion
+
+        #region Methods
+
+        public void AddSender(SenderModel sender)
+        {
+            if (sender != null)
+            {
+                senders.Add(sender);
+            }
+        }
+
+        #endregion
     }
 }

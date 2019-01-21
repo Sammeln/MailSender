@@ -68,6 +68,7 @@
     <Compile Include="Data\InMemoryData.cs" />
     <Compile Include="Entity\Interface\ISenderModel.cs" />
     <Compile Include="Service\MailSendService.cs" />
+    <Compile Include="Service\RelayCommand.cs" />
     <Compile Include="Service\ViewModelBase.cs" />
     <Compile Include="ViewModel\SenderViewModel.cs" />
     <Page Include="MailSenderMainWindow.xaml">
