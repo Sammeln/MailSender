@@ -15,3 +15,9 @@ F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csproj.GenerateResource.
 F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csproj.CoreCompileInputs.cache
 F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.exe
 F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.pdb
+F:\Git\MailSender\MailSenderWPF\bin\Debug\BouncyCastle.Crypto.dll
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MailKit.dll
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MimeKit.dll
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MailKit.xml
+F:\Git\MailSender\MailSenderWPF\bin\Debug\MimeKit.xml
+F:\Git\MailSender\MailSenderWPF\obj\Debug\MailSenderWPF.csproj.CopyComplete

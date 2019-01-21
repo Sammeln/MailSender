@@ -1,15 +1,11 @@
 ﻿using MailSenderWPF.Entity.Interface;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MailSenderWPF.Service;
 
 namespace MailSenderWPF.Entity.Implementation
 {
-    public class RecipientModel : IBaseEntity, INamedEntity, IEmailAddress, INotifyPropertyChanged
+    public class RecipientModel : ViewModelBase, IBaseEntity, INamedEntity, IEmailAddress
     {
         #region Private members
 
@@ -40,11 +36,5 @@ namespace MailSenderWPF.Entity.Implementation
         }
         public string EMail { get; set; } 
         #endregion
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
-        }
     }
 }

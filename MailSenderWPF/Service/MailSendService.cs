@@ -12,9 +12,9 @@ namespace MailSenderWPF.Service
 
         public MailSendService(MailMessageModel message, SenderModel sender, RecipientModel recipient)
         {
-            //this.message = message;
-            //this.sender = sender;
-            //this.recipient = recipient;
+            this.sender = sender;
+            this.recipient = recipient;
+
             mailMessage = new MimeMessage();
             mailMessage.From.Add(new MailboxAddress(sender.Name,sender.EMail));
             mailMessage.To.Add(new MailboxAddress(recipient.EMail));
@@ -29,7 +29,12 @@ namespace MailSenderWPF.Service
         {
             using (SmtpClient client = new SmtpClient())
             {
-                client.Connect();
+                client.Connect(sender.SMTP?.Domain,sender.SMTP.Port);
+                client.Authenticate(sender.EMail, sender.Password);
+
+                client.Send(mailMessage);
+
+                client.Disconnect(true);
             }
         }
     }

@@ -6,10 +6,11 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using MailSenderWPF.Entity.Interface;
+using MailSenderWPF.Service;
 
 namespace MailSenderWPF.Entity.Implementation
 {
-    public class SMTPModel : INamedEntity, IBaseEntity, INotifyPropertyChanged
+    public class SMTPModel : ViewModelBase, INamedEntity, IBaseEntity
     {
         #region private members
 
@@ -61,10 +62,5 @@ namespace MailSenderWPF.Entity.Implementation
 
         #endregion
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
-        }
     }
 }
