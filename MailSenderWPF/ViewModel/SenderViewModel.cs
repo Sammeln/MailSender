@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.ComponentModel;
 using MailSenderWPF.Service;
 using MailSenderWPF.Data;
+using MailSenderWPF.View;
 
 namespace MailSenderWPF.ViewModel
 {
@@ -25,15 +26,9 @@ namespace MailSenderWPF.ViewModel
             {
                 return addCommand ?? (addCommand = new RelayCommand(obj =>
                 {
-                    SenderModel sender = new SenderModel
-                    {
-                        Id = SendersList.Count + 1,
-                        Name = "_",
-                        EMail = "_",
-                        Password = "_",
-                        SMTP = new SMTPModel()
-                    };
-                    context.Senders.Add(sender);
+                    AddEditView aev = new AddEditView();
+                    aev.DataContext = new AddEditSenderVM(context);
+                    aev.ShowDialog();
                 }));
             }
         }

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MailSenderWPF.View;
 
 namespace MailSenderWPF.ViewModel
 {
@@ -25,9 +26,9 @@ namespace MailSenderWPF.ViewModel
             {
                 return confirmCommand ?? (confirmCommand = new RelayCommand(obj =>
                 {
-                    if (true)
+                    if (CurrentSender != null)
                     {
-                        context.AddSender(currentSender);
+                        context.AddSender(CurrentSender);
                     }
                 }));
             }

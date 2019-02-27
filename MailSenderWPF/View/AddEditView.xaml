@@ -13,5 +13,75 @@
             <RowDefinition
                 Height="40"/>
         </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel
+                                        Grid.Column="0">
+                <TextBlock
+                                            Text="Name"/>
+                <TextBlock
+                                            Text="E-Mail"/>
+                <TextBlock
+                                            Text="Password"/>
+                <TextBlock
+                                            Text="SMTP"/>
+                <TextBlock
+                                            Text="Port"/>
+            </StackPanel>
+            <StackPanel
+                                        Grid.Column="0">
+                <TextBlock
+                                            Text="Name"/>
+                <TextBlock
+                                            Text="E-Mail"/>
+                <TextBlock
+                                            Text="Password"/>
+                <TextBlock
+                                            Text="SMTP"/>
+                <TextBlock
+                                            Text="Port"/>
+            </StackPanel>
+            <StackPanel
+                                        Grid.Column="1"
+                                        DataContext="{Binding CurrentSender}">
+                <TextBox
+                    Text="{Binding Name}"/>
+                <TextBox
+                    Text="{Binding EMail}"/>
+                <TextBox
+                    Text="{Binding Password}"/>
+                <TextBox
+                    DataContext="{Binding SMTP}"
+                    Text="{Binding Domain}"/>
+                <TextBox
+                    DataContext="{Binding SMTP}"
+                    Text="{Binding Port}"/>
+            </StackPanel>
+        </Grid>
+        <Grid
+            Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*"/>
+                <ColumnDefinition
+                    Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="0"
+                Content="Confirm"
+                Command="{Binding ConfirmCommand}"/>
+            <Button
+                Grid.Column="1"
+                Content="Cancel"/>
+
+        </Grid>
+        
+
     </Grid>
 </Window>
