@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\MailSender\MailSenderWPF\obj\Debug\
+F:\Git\MailSender\MailSenderWPF\obj\Debug\
 MailSenderWPF
 none
 false
 DEBUG;TRACE
-F:\MailSender\MailSenderWPF\App.xaml
-2-744935388
+F:\Git\MailSender\MailSenderWPF\App.xaml
+31615191412
 
-24-948790624
-17906740289
-MailSenderMainWindow.xaml;Theme.xaml;
+26-458832960
+17-1794237314
+MailSenderMainWindow.xaml;Theme.xaml;View\AddEditView.xaml;
 
-True
+False
 

@@ -70,7 +70,11 @@
     <Compile Include="Service\MailSendService.cs" />
     <Compile Include="Service\RelayCommand.cs" />
     <Compile Include="Service\ViewModelBase.cs" />
+    <Compile Include="ViewModel\AddEditSenderVM.cs" />
     <Compile Include="ViewModel\SenderViewModel.cs" />
+    <Compile Include="View\AddEditView.xaml.cs">
+      <DependentUpon>AddEditView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MailSenderMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +98,10 @@
     <Page Include="Theme.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AddEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
